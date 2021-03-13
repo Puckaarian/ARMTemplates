@@ -226,7 +226,7 @@
   "outputs": {
     "hostname": {
       "type": "string",
-      "value": "[reference(parameters('publicIPName')).dnsSettings.fqdn]"
+      "value": "[reference(variables('pipName')).dnsSettings.fqdn]"
     }
   }
 }
