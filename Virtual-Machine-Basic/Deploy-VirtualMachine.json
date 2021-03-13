@@ -120,6 +120,7 @@
   "variables": {
     "storageAccountName": "[concat('bootdiags', uniquestring(resourceGroup().id))]",
     "nicName": "[concat(parameters('vmName'), '-nic')]",
+    "pipName": "[concat(parameters('vmName'), '-pip')]",
     "subnetRef": "[resourceId(parameters('existingVirtualNetworkResourceGroup'), 'Microsoft.Network/virtualNetworks/subnets', parameters('existingVirtualNetworkName'),  parameters('subnetName'))]"
   },
   "resources": [
@@ -164,7 +165,7 @@
             "properties": {
               "privateIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
-                "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPName'))]"
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('pipName'))]"
               },
               "subnet": {
                 "id": "[variables('subnetRef')]"
