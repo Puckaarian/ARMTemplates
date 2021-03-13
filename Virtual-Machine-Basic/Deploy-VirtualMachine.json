@@ -149,7 +149,7 @@
       "name": "[variables('nicName')]",
       "location": "[parameters('location')]",
       "dependsOn": [
-        "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPName'))]"
+        "[resourceId('Microsoft.Network/publicIPAddresses', variables('pipName'))]"
       ],
       "properties": {
         "ipConfigurations": [
