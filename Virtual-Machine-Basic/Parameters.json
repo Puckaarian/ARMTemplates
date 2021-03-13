@@ -16,6 +16,9 @@
       },
       "subnetName":{
           "value": "snt-prd-we-001"
+      },
+      "vmName":{
+          "value": "IRAZWEPRDWEB001"
       }
     }
   }
