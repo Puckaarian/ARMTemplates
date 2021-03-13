@@ -1,5 +1,1 @@
-az deployment group create \
-  --name ExampleDeployment \
-  --resource-group ExampleGroup \
-  --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json" \
-  --parameters storageAccountType=Standard_GRS
+az deployment group create --name Deploy-VirtualMachine --resource-group IREPRDWE-INFRG --template-uri "https://raw.githubusercontent.com/Puckaarian/ARMTemplates/main/Virtual-Machine-Basic/Deploy-VirtualMachine.json" --parameters Parameters.json

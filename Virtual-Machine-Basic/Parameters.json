@@ -3,13 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "adminUsername": {
-        "value": "GEN-UNIQUE"
+        "value": "srvadmin"
       },
       "adminPassword": {
-        "value": "GEN-PASSWORD"
+        "value": "R$d+7V2#uvTmY?R-"
       },
-      "dnsLabelPrefix": {
-        "value": "GEN-UNIQUE"
+      "existingVirtualNetworkName":{
+        "value": "vnt-prd-we-001"
+      },
+      "existingVirtualNetworkResourceGroup":{
+        "value": "IREPRDWE-NETRG"
+      },
+      "subnetName":{
+          "value": "snt-prd-we-001"
       }
     }
   }
